@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<ul>
+    {% for customer in customers %}
+    <li>{{ customer.name }} {{ customer.age }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

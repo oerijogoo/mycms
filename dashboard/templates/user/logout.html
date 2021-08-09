@@ -1,0 +1,20 @@
+{% extends 'dashboard/base.html' %}
+{% block title %} logout page{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="border p-3 bg-white">
+                <h3>log out page</h3>
+                <hr>
+                <div class="alert alert-danger">
+                    <h4>yuo have been loged out</h4>
+                </div>
+                <a href="{% url 'user-login' %}">Login</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

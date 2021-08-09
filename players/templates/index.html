@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<h1>players</h1>
+<ul>
+    {% for player in players %}
+        <li>{{ player.name }} {{ player.age }} years</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

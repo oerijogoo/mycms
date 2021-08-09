@@ -1,0 +1,16 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% include 'dashboard/basee.html' %}
+<h2>upload page</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+    <button type="submit">Upload File</button>
+
+</form>
+{% if url %}
+<p>uploaded file: <a href="{{ url }}">{{ url }}</a></p>
+{% endif %}
+{% endblock %}

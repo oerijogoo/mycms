@@ -1,0 +1,14 @@
+{% extends 'dashboard/base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% load crispy_forms_tags %}
+{% block content %}
+{% include 'dashboard/basee.html' %}
+<h2>upload </h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form|crispy }}
+
+    <button class="btn btn-primary" type="submit">Upload book</button>
+
+</form>
+{% endblock %}
