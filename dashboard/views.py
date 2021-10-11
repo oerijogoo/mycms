@@ -85,6 +85,10 @@ def product(request):
     return render(request, 'dashboard/products.html', context)
 
 
+def home(request):
+    return render(request, 'dashboard/index1.html')
+
+
 @login_required(login_url='user-login')
 def product_delete(request, pk):
     item = Product.objects.get(id=pk)

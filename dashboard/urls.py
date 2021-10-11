@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('dashboard/', views.index, name='dashboard-index'),
+    path('home/', views.home, name='dashboard-home'),
     path('staff/', views.staff, name='dashboard-staff'),
     path('staff/detail/<int:pk>/', views.staff_detail, name='dashboard-staff-detail'),
     path('product/', views.product, name='dashboard-product'),
