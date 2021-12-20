@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #0000000a;
 }
 
 a {
@@ -59,16 +59,16 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-#header {
+#header1 {
   height: 72px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
   padding: 15px 0;
-  background: #000;
+  background: #bb4545;
 }
 
-#header .logo h1 {
+#header1 .logo h1 {
   font-size: 30px;
   margin: 0;
   padding: 6px 0;
@@ -78,19 +78,19 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-#header .logo h1 a, #header .logo h1 a:hover {
+#header1 .logo h1 a, #header .logo h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
 
-#header .logo img {
+#header1 .logo img {
   padding: 0;
   margin: 0;
   max-height: 40px;
 }
 
 @media (max-width: 992px) {
-  #header {
+  #header1 {
     height: 60px;
     padding: 8px 0;
   }
@@ -334,93 +334,12 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
-  width: 100%;
-  height: calc(100vh - 72px);
-  background: url("../img/back.jpg") center center;
-  background-size: cover;
-  position: relative;
-  margin-top: 72px;
-  padding: 0;
-}
-
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-#hero .container {
-  z-index: 2;
-}
-
-#hero h1 {
-  margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
-}
-
-#hero h2 {
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 35px;
-  font-size: 24px;
-}
-
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#hero .btn-get-started:hover {
-  border-color: #1bac91;
-  background: #1bac91;
-}
-
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 992px) {
-  #hero {
-    margin-top: 60px;
-    height: calc(100vh - 60px);
-  }
-}
-
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 300px 0;
   overflow: hidden;
 }
 
@@ -490,7 +409,7 @@ section {
 
 .steps .content-item {
   padding: 40px;
-  border-left: 1px solid #d4e9e6;
+  border-left: 1px solid #47e022;
   border-bottom: 1px solid #d4e9e6;
   margin: -1px;
 }
