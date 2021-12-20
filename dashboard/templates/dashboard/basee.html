@@ -3,11 +3,11 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header bg-info text-white">
-                    information
+                    welcome To
                 </div>
                 <div class="card-body">
                     <marquee behavior="" direction="">
-                        <h3 class="my-4">this is the information</h3>
+                        <h3 class="my-4">Our Online Shop</h3>
                     </marquee>
                 </div>
             </div>
@@ -16,12 +16,12 @@
 <div class="col-md-8">
     <div class="card">
         <div class="card-header bg-info text-white">
-            statistics
+            Summary
         </div>
     <div class="card-body">
         <div class="row">
             <div class="col-md-4">
-                <a class="text-decoration-none text-dark" href="">
+                <a class="text-decoration-none text-dark" href="{% url 'dashboard-staff' %}">
                     <div class="card my-card shadow text-center p-3">
                         <h4>staff <i class="fas fa-user"></i></h4>
                         <h3>{{ workers_count }}</h3>
@@ -29,7 +29,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a class="text-decoration-none text-dark" href="">
+                <a class="text-decoration-none text-dark" href="{% url 'dashboard-product' %}">
                     <div class="card my-card shadow text-center p-3">
                         <h4>products <i class="fas fa-box"></i></h4>
                         <h3>{{ product_count }}</h3>
@@ -37,7 +37,7 @@
                 </a>
             </div>
             <div class="col-md-4">
-                <a class="text-decoration-none text-dark" href="">
+                <a class="text-decoration-none text-dark" href="{% url 'dashboard-order' %}">
                     <div class="card my-card shadow text-center p-3">
                         <h4>orders <i class="fas fa-shipping-fast"></i></h4>
                         <h3>{{ orders_count }}</h3>
