@@ -87,7 +87,7 @@ a{
 	line-height: 35px;
 	position: relative;
 	font-weight: 400;
-	color: #fff;
+	color: #2db525;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     padding: 0px 0px 5px 0px;
 }
@@ -97,7 +97,7 @@ a{
 .container1 > header h2, p.info{
 	font-size: 16px;
 	font-style: italic;
-	color: #f8f8f8;
+	color: #6bf715;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
 /* Header Style */
