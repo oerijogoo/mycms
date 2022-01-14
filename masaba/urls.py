@@ -37,13 +37,14 @@ urlpatterns = [
     path('password-reset-confirm/<uidb64>/<token>/', auth_views.PasswordResetConfirmView.as_view(template_name='user/password_reset_confirm.html'), name='password_reset_confirm'),
     path('password-reset-complete/', auth_views.PasswordResetCompleteView.as_view(template_name='user/password_reset_complete.html'), name='password_reset_complete'),
     #path('', include('blog.urls')),
-    #path('city/', include('city.urls')),
+    path('city/', include('city.urls')),
     path('', include('dashboard.urls')),
     path('register/', use_views.register, name='use-register'),
     path('', auth_view.LoginView.as_view(template_name='user/login.html'), name='user-login'),
     path('logout/', auth_view.LogoutView.as_view(template_name='user/logout.html'), name='user-logout'),
     path('profile/', use_views.profile, name='use-profile'),
     path('profile/update/', use_views.profile_update, name='use-profile-update'),
+
 ]
 
 
