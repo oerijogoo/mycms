@@ -1,5 +1,6 @@
 from django.db import models
 from twilio.rest import Client
+import twilio
 # Create your models here.
 
 
